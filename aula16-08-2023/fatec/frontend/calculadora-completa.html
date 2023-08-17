@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form method="get" action="../backend/calculadora.php">
+            <input type="radio" name="operacao" id="soma" value="+" checked required>
+            <label for="soma">+</label> 
+            <input type="radio" name="operacao" id="subtracao" value="-" required> 
+            <label for="subtracao">-</label> 
+            <input type="radio" name="operacao" id="multiplicacao" value="*" required> 
+            <label for="multiplicacao">*</label> 
+            <input type="radio" name="operacao" id="divisao" value="/" required> 
+            <label for="divisao">/</label> 
+            <br>
+            <br>
+            Valor a: <input type="number" name="valorA" step="0.1" required/>
+            <br>
+            <br>
+            Valor b: <input type="number" name="valorB" step="0.1" required/>
+            <br>
+            <br>
+            <input type="submit" value="Calcular"/>
+        </form>
+    </center>
+    
+</body>
+</html>
